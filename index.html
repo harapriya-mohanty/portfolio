@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="head">
+                <div class="nav-logo">
+                    <img src="hp-removebg-preview.png" alt="logo" height="80px" width="80px">
+                </div>
+                <div class="nav-menu" id="myNavMenu">
+                    <ul class="nav_menu_list">
+                        <li class="nav_list">
+                            <a href="#home" class="nav-link active-link">Home</a>
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#about" class="nav-link">About</a>
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#project" class="nav-link">project</a>
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#contact" class="nav-link">Contact</a>
+                            <div class="circle"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mode">
+                    <div class="moon-sun" id="toggle-switch">
+                        <i class="fa-solid fa-moon" id="moon"></i>
+                        <i class="fa-solid fa-sun" id="sun"></i>
+                    </div>
+                </div>
+                <div class="nav-menu-btn">
+                    <i class="fa-solid fa-bars" onclick="myMenufunction()"></i>
+                </div>
+            </div>
+            <div class="home">
+                <div class="wrapper">
+                    <div class="featured-box" id="home">
+                        <div class="featured-text">
+                            <div class="hello">
+                                <p>Hello Guys</p>
+                            </div>
+                            <div class="textinfo">
+                                <p>My name is Hara Priya Mohanty!I am a web developer</p>
+                            </div>
+                            <div class="textbtn">
+                                <button class="btn" onclick="gotolink(this)" value="C:\Users\KIIT0001\OneDrive\html,css,js\portfolio\Harapriya.pdf">Download CV</button>
+                            </div>
+                            
+                            <div class="socialicons">
+                                <a href="https://www.instagram.com" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/harapriya-mohanty" class="icon"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="featuredimage">
+                            <div class="image">
+                                <img src="girl-removebg-preview.png" alt="girl">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div clss="aboutcontainer">
+            <div class="row">
+                <div class="aboutcol1" id="about">
+                    <img src="pic33.png">
+                </div>
+                <div class="aboutcol2">
+                    <h1 class="sub_title">About Me</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto repellendus nesciunt doloribus
+                        accusamus tenetur maxime, porro enim! Optio, in recusandae! Explicabo ab non possimus modi saepe
+                        doloremque dicta hic similique.</p>
+                    <div class="tab-titles">
+                        <p class="tablinks active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tablinks" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents activetab" id="skills">
+                        <div class="skill_box">
+                            <span class="title">HTML</span>
+                            <div class="skill-bar html">
+                                <span class="skill-per html">
+                                    <span class="tooltip">80%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill_box">
+                            <span class="title">CSS</span>
+                            <div class="skill-bar html">
+                                <span class="skill-per css">
+                                    <span class="tooltip">70%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill_box">
+                            <span class="title">JAVASCRIPT</span>
+                            <div class="skill-bar html">
+                                <span class="skill-per javascript">
+                                    <span class="tooltip">40%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill_box">
+                            <span class="title">PYTHON</span>
+                            <div class="skill-bar html">
+                                <span class="skill-per python">
+                                    <span class="tooltip">55%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill_box">
+                            <span class="title">JAVA</span>
+                            <div class="skill-bar html">
+                                <span class="skill-per java">
+                                    <span class="tooltip">75%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill_box">
+                            <span class="title">C</span>
+                            <div class="skill-bar html">
+                                <span class="skill-per c">
+                                    <span class="tooltip">64%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-current</span><br>Kalinga Institute of Industrial Technology</li>
+                            <li><span>2021-2023</span><br>Modern Public School</li>
+                            <li><span>2011-2021</span><br>St Vincent Convent Senior Secondary School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p><i class="fa-solid fa-envelope"></i> Email: harapriyamohanty270@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> Phone: 7205627678</p>
+            </div>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Hara Priya Mohanty. All Rights Reserved.</p>
+</footer>
+    <script src="first.js"></script>
+</body>
+
+</html>
